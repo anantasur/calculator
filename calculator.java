@@ -16,9 +16,10 @@ class Calculator{
     return b/a;
   }
 
-  // public static int operation(int a, int b, String operator){
-  //   (operator)
-  // }
+  public static int operation(int a, int b, char operator){
+    if(operator=='+') return sum(a,b);
+    return 0;
+  }
 
   public static void main(String[] args) {
     System.out.println("Enter the first digit:");
@@ -28,13 +29,6 @@ class Calculator{
     int digit2 = Integer.parseInt(System.console().readLine());
 
     String op = System.console().readLine();
-    System.out.println(op);
-
-    System.out.println("sum :" + sum(digit1,digit2));
-    System.out.println("difference : " +difference(digit1,digit2));
-    System.out.println("multiplication : " +multiplication(digit1,digit2));
-    System.out.println("division : " +division(digit1,digit2));
-
 
   }
 
