@@ -31,4 +31,10 @@ public class calculatorTest{
     Calculator c = new Calculator();
     assertEquals(10,c.operation(4,6,'+'));
   }
+
+  @Test
+  public void operation_does_the_difference_when_4_6_minus_is_passed_and_gives_2(){
+    Calculator c = new Calculator();
+    assertEquals(2,c.operation(4,6,'-'));
+  }
 }

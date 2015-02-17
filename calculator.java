@@ -18,6 +18,9 @@ class Calculator{
 
   public static int operation(int a, int b, char operator){
     if(operator=='+') return sum(a,b);
+    if(operator=='-') return difference(a,b);
+    if(operator=='*') return multiplication(a,b);
+    if(operator=='/') return division(a,b);
     return 0;
   }
 
