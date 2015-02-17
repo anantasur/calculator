@@ -37,4 +37,16 @@ public class calculatorTest{
     Calculator c = new Calculator();
     assertEquals(2,c.operation(4,6,'-'));
   }
+
+  @Test
+  public void operation_does_the_multiply_when_4_6_star_is_passed_and_gives_12(){
+    Calculator c = new Calculator();
+    assertEquals(24,c.operation(4,6,'*'));
+  }
+
+  @Test
+  public void operation_does_the_division_when_4_8_slash_is_passed_and_gives_2(){
+    Calculator c = new Calculator();
+    assertEquals(2,c.operation(4,8,'/'));
+  }
 }
